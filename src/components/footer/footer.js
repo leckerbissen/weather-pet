@@ -13,13 +13,13 @@ export default function Footer() {
       <div className="footer__pics">
       <a
           className="footer__pics-link"
-          href="https://ru.freepik.com/author/upklyak"
+          href="https://dynamicwallpaper.club/wallpaper/a9q1jiy0cu"
           target="_blank"
           rel="noopener noreferrer"
         >
-          upklyak
+          Dropside
         </a>
-        <p className="footer__pics-text">Автор фоновых изображений</p>
+        <p className="footer__pics-text">Источник фоновых изображений</p>
       </div>
       <div className="footer__author">
       <a

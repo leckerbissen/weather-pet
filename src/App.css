@@ -215,6 +215,10 @@
   .weather__extra > div > p > span {
     font-size: 75px;
   }
+
+  .footer {
+    column-gap: 0;
+  }
 }
 
 /* Общее для адаптива */
@@ -264,10 +268,25 @@
   }
 }
 
-@media (min-width: 467px) and (max-width: 767px) {
+
+@media (max-width: 767px) {
+
+  .weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
   .weather__extra {
-    padding: 50px 60px;
+    padding: 30px 60px;
+  }
+
+  .weather__text-temp {
+    font-size: 50px;
+  }
+
+  .weather__extra > div > p {
+    font-size: 10px;
   }
 
   .weather__extra > div > p > span {
@@ -278,10 +297,18 @@
     display: flex;
     justify-content: space-evenly;
     font-size: 12px;
+    column-gap: 0;
   }
 
   .footer > div {
     margin-right: 0;
+    padding: 30px 5px;
+    border-radius: 0;
+    border-right: 1px dotted white;
   }
-
+  @media (min-width: 400px) and (max-width: 767px){
+    .weather__extra {
+      padding: 50px 60px;
+    }
+  }
 }
