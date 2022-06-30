@@ -2,10 +2,8 @@
 
 This app allows you to get Weather information about certain City (Town). Coded by React and JavaScript.
 
-![Desctop1](./public/shots/desc1.png)
-![Tablet](./public/shots/tablet.png)
-![Mobile](./public/shots/mobile.png)
-![Desctop2](./public/shots/desc2.png)
+![Desctop1](./public/shots/desc.jpeg)
+
 
 ## How it works
 
