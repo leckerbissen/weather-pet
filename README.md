@@ -34,5 +34,5 @@ The app is also available via [this link](https://leckerbissen.github.io/).
 ## Some more important information ##
 * API - [OpenWeatherMap](https://openweathermap.org/api).
 * Background pictures from site - [Dynamic Wallpaper Club](https://dynamicwallpaper.club/wallpaper/a9q1jiy0cu).
-* Author - Linkova Iuliia. My [telegram account](leckerbissen).
+* Author - Linkova Iuliia. My [telegram account](https://t.me/leckerbissen).
 * There is a frog on favicon, cause when I started this project that was Wednesday, dudes.
