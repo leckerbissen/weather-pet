@@ -22,6 +22,7 @@ export default function GetSunset(data) {
   let convertData = (element) => {
     let time = new Date(element * 1000);
     let tHour = time.getHours();
+    console.log('zone: ' + timeZone)
 
     switch (true) {
       case (localZone > timeZone && timeZone > 0):
@@ -30,18 +31,23 @@ export default function GetSunset(data) {
         }
         tHour = tHour - (localZone - timeZone);
         break;
-      case (timeZone > localZone):
+      case (timeZone > localZone && timeZone !== 0):
         if (tHour > 24) {
           tHour = -(24 - tHour);
         }
         tHour = tHour + (timeZone - localZone);
         break;
-      case (sun.indexOf(element) === 0 && localZone !== timeZone):
+      case (sun.indexOf(element) === 0 && localZone !== timeZone  && timeZone > 0):
         time = new Date((element + offset) * 1000);
         tHour = 24 - time.getHours() - localZone;
         break;
       case (timeZone === localZone):
         break;
+        case ((timeZone-localZone) < 0 && sun.indexOf(element) === 0):
+          time = new Date((element + offset) * 1000);
+          tHour = time.getHours() - timeZone + (timeZone - localZone);
+          console.log('catch')
+          break;
       default:
         tHour = time.getHours() + (timeZone - localZone);
         break;
