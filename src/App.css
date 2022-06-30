@@ -1,0 +1,287 @@
+.App {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 36px;
+  grid-row-gap: 26px;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.header { 
+  grid-area: 1 / 1 / 2 / 3;
+  padding: 10px 10px;
+}
+.search { 
+  grid-area: 2 / 3 / 3 / 6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.search__input {
+  background-color: rgba(255, 255, 255, 0.74);
+  border: 1px solid white;
+  box-shadow: 8px 9px 8px 0px rgba(77, 178, 255, 0.22);
+  width: 100%;
+  border-radius: 30px;
+  color: dimgray;
+  text-align: center;
+  padding: 10px;
+}
+
+.search__input::placeholder {
+  color: dimgray;
+  font-size: 15px;
+}
+
+.search__input:focus {
+  box-shadow: -10px -6px 8px 0px rgba(77, 178, 255, 0.22);
+  background-color: white;
+  color: black;
+}
+
+.search__input:focus::placeholder {
+  visibility: hidden;
+}
+
+.weather { 
+  grid-area: 3 / 2 / 5 / 4; 
+  text-shadow: 5px 5px 4px rgba(150, 150, 150, 1);
+}
+
+.weather__wrap > svg {
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+}
+
+.weather__city {
+  text-align: center;
+}
+
+.weather__extra { 
+  grid-area: 3 / 5 / 5 / 8;
+  background-color: rgba(255, 255, 255, 0.74);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 8px 9px 8px 0px rgba(77, 178, 255, 0.22);
+  padding: 20px 80px;
+  color: #2e2e2e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weather__extra > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  text-align: center;
+}
+
+.weather__extra > div > p {
+  font-style: italic;
+}
+
+.weather__extra > div > p > span {
+  font-size: 40px;
+  font-style: normal;
+}
+
+.sign {
+  font-size: 15px;
+}
+
+.weather__wrap {
+  display: flex;
+}
+
+.weather__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather__text > p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.weather__text-temp {
+  font-size: 115px;
+}
+
+.weather__text-temp > span {
+  font-size: 20px;
+}
+
+.weather__text-desc {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.footer { 
+  grid-area: 5 / 2 / 6 / 7;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  color: #2e2e2e;
+  text-align: center;
+
+}
+
+.footer__api {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+.footer__pics {
+  grid-area: 1 / 4 / 2 / 6;
+}
+
+.footer__author {
+  grid-area: 1 / 6 / 2 / 8;
+}
+
+.footer__api, .footer__author, .footer__pics {
+  background-color: rgba(255, 255, 255, 0.74);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.footer__api:hover, .footer__author:hover, .footer__pics:hover {
+  box-shadow: -4px -4px 29px 15px rgba(255, 255, 255, 0.2);
+}
+
+.footer__api-link, .footer__pics-link, .footer__author-link {
+  text-decoration: none;
+  color: #141414;
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* Фоны по времени дня */
+.morning {
+  background-image: url('./img/morning.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.afternoon {
+  background-image: url('./img/noon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.night {
+  background-image: url('./img/night.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.evening {
+  background-image: url('./img/evening.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Планшеты */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .weather__city {
+    font-size: 50px;
+  }
+
+  .weather__wrap > svg {
+    height: 200px;
+    width: auto;
+  }
+
+  .weather__text-temp {
+    font-size: 120px;
+  }
+
+  .weather__extra > div > p > span {
+    font-size: 75px;
+  }
+}
+
+/* Общее для адаптива */
+
+@media (max-width: 1199px){
+  .App {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 11px;
+  }
+  .header {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 15px;
+  }
+  .search {
+    grid-area: 1 / 3 / 2 / 5;
+    padding: 5px 15px;
+  }
+  .weather {
+    grid-area: 2 / 2 / 4 / 4;
+    text-shadow: -1px -3px 3px rgba(0, 0, 0, 0.4);
+}
+
+  .weather__wrap {
+    justify-content: center;
+  }
+
+
+  .weather__wrap > svg {
+    height: 200px;
+    width: auto;
+  }
+
+  .weather__text-temp {
+    font-size: 120px;
+  }
+
+  .weather__extra {
+    grid-area: 4 / 1 / 6 / 5;
+    border-radius: 0;
+  }
+
+  .footer {
+    grid-area: 6 / 1 / 7 / 5;
+  }
+}
+
+@media (min-width: 467px) and (max-width: 767px) {
+
+  .weather__extra {
+    padding: 50px 60px;
+  }
+
+  .weather__extra > div > p > span {
+    font-size: 30px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+  }
+
+  .footer > div {
+    margin-right: 0;
+  }
+
+}
