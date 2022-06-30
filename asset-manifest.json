@@ -1,19 +1,16 @@
 {
-  "files": {
-    "main.css": "/weather-pet/static/css/main.a9f819d2.css",
-    "main.js": "/weather-pet/static/js/main.4dfa20f6.js",
-    "static/js/787.13d76ca7.chunk.js": "/weather-pet/static/js/787.13d76ca7.chunk.js",
-    "static/media/morning.jpg": "/weather-pet/static/media/morning.16668d1207abf144639c.jpg",
-    "static/media/noon.jpg": "/weather-pet/static/media/noon.5d8c9051a3b8a186a9f4.jpg",
-    "static/media/evening.jpg": "/weather-pet/static/media/evening.c33493f02b003a5ece72.jpg",
-    "static/media/night.jpg": "/weather-pet/static/media/night.fccc5f5e46dc7b33ee85.jpg",
-    "index.html": "/weather-pet/index.html",
-    "main.a9f819d2.css.map": "/weather-pet/static/css/main.a9f819d2.css.map",
-    "main.4dfa20f6.js.map": "/weather-pet/static/js/main.4dfa20f6.js.map",
-    "787.13d76ca7.chunk.js.map": "/weather-pet/static/js/787.13d76ca7.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.a9f819d2.css",
-    "static/js/main.4dfa20f6.js"
-  ]
+  "main.css": "/weather-pet/static/css/main.f8dd8c36.chunk.css",
+  "main.js": "/weather-pet/static/js/main.abafb2fe.chunk.js",
+  "main.js.map": "/weather-pet/static/js/main.abafb2fe.chunk.js.map",
+  "runtime~main.js": "/weather-pet/static/js/runtime~main.b3cdfa85.js",
+  "runtime~main.js.map": "/weather-pet/static/js/runtime~main.b3cdfa85.js.map",
+  "static/js/2.ccb0b3cf.chunk.js": "/weather-pet/static/js/2.ccb0b3cf.chunk.js",
+  "static/js/2.ccb0b3cf.chunk.js.map": "/weather-pet/static/js/2.ccb0b3cf.chunk.js.map",
+  "static/js/3.e131f2af.chunk.js": "/weather-pet/static/js/3.e131f2af.chunk.js",
+  "static/js/3.e131f2af.chunk.js.map": "/weather-pet/static/js/3.e131f2af.chunk.js.map",
+  "index.html": "/weather-pet/index.html",
+  "precache-manifest.6589259ca2a4b7b8ef20c2b56e510f04.js": "/weather-pet/precache-manifest.6589259ca2a4b7b8ef20c2b56e510f04.js",
+  "service-worker.js": "/weather-pet/service-worker.js",
+  "static/css/main.f8dd8c36.chunk.css.map": "/weather-pet/static/css/main.f8dd8c36.chunk.css.map",
+  "static/media/App.css": "/weather-pet/static/media/noon.51928ff8.jpg"
 }
