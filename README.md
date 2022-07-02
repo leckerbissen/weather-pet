@@ -29,7 +29,7 @@ Run the app
 
 app runs on http://localhost:3000
 
-The app is also available via [this link](https://leckerbissen.github.io/).
+The app is also available via [this link](https://leckerbissen.github.io/weather-pet).
 
 ## Some more important information ##
 * API - [OpenWeatherMap](https://openweathermap.org/api).
